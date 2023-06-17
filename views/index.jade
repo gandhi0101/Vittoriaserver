@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  //-.container
+    h1.text-center.mt-5 Log-in
+    .row
+     
+      .col-md-6.mx-auto
+        form(action="/login") 
+          hr
+          .form-group
+            label.mb-0 User
+            input.form-control(name="username" type="text" required)
+          .form-group
+            label.mb-0 Password
+            input.form-control(name="password" type="password" required)
+          hr
+          .form-group
+            button.btn.btn-primary.btn-block(type="submit") Submit
+    p.text-center If you do not have an account, please contact the site administrator.
+  .container
+    .row 
+      .col-md-6.mx-auto
+        h1 Hola :) #{title}
+        p.text-center Welcome to <strong>#{title}</strong>
